@@ -1,13 +1,21 @@
+import { useState } from "react"
 export default function FieldThree(){
+     const [fieldThree, setFieldThree] = useState('Misc')
      return(
           <>
+          <select
+            value={fieldThree}
+            onChange={e=> setFieldThree(e.target.value)}
+            name="category">
+            <option value="Misc">Select a 🤍</option>
+            <option value="#Beer">#Beer</option>
+            <option value="#Weed">#Weed</option>
+            <option value="#Bars">#Bars</option>
+            <option value="#Outdoors">#Outdoors</option>
+            <option value="#Kids">#Kids</option>
+            <option value="#Indoors">#Indoors</option>
+          </select>
 
-      <p>
-        Radio buttons:
-        <label><input type="radio" name="myRadio" value="option1" defaultChecked={true} /> Option 1</label>
-        <label><input type="radio" name="myRadio" value="option2"  /> Option 2</label>
-        <label><input type="radio" name="myRadio" value="option3" /> Option 3</label>
-      </p>
       <hr />
 
           </>

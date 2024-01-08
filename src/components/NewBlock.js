@@ -29,14 +29,17 @@
 //        </div>
 //      );
 //    }
+import {useState}from 'react'
 import Button from './Button'
 import FieldOne from './FieldOne';
-import FieldThree from './FieldThree';
 import FieldTwo from './FieldTwo';
-
+import FieldThree from './FieldThree';
+import FieldFour from './FieldFour';
    
 export default function MyForm() {
+
   function handleSubmit(e) {
+
     // Prevent the browser from reloading the page
     e.preventDefault();
 
@@ -61,6 +64,7 @@ export default function MyForm() {
       <hr />
       <FieldTwo />
       <FieldThree />
+      <FieldFour />
       {/* <label>
         Checkboit: <input type="checkbox" name="myCheckbox" defaultChecked={true} />
       </label>
