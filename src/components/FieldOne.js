@@ -6,9 +6,9 @@ export default function FieldOne(){
           <label>
         Text <input name="myInput" type='text'value={fieldOne} onChange={e=> setFieldOne(e.target.value)} />
       </label>
-      <div>
+      {/* <div>
           <h1>{fieldOne}</h1>
-      </div>
+      </div> */}
           </>
      )
 }

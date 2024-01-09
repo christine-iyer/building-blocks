@@ -37,7 +37,7 @@ import FieldThree from './FieldThree';
 import FieldFour from './FieldFour';
 import Display from './Display';
    
-export default function MyForm() {
+export default function MyForm({fieldOne}) {
 
   function handleSubmit(e) {
 
@@ -63,17 +63,17 @@ export default function MyForm() {
         Text <input name="myInput" defaultValue="HIHIHIHIH" />
       </label> */}
       <FieldOne />
-      <hr />
       <FieldTwo />
-      <FieldThree 
-      />
+      <FieldThree />
       <FieldFour />
   
 
       <Button type="reset">Reset form</Button>
       <Button type="submit">Submit form</Button>
     </form>
-    {/* <Display /> */}
+    <div>
+      <Display /> 
+    </div>
     </div>
   );
 }

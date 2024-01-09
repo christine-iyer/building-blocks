@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import FieldThree from './FieldThree'
+import FieldFour from './FieldFour'
 
-const ReadMore = ({fieldThree}) => {
-     const text = FieldThree
+const ReadMore = ({fieldFour}) => {
+     const text = FieldFour
      const [readMore, setReadMore]= useState(true)
      const toggleReadMore =()=>{
           setReadMore(!ReadMore)

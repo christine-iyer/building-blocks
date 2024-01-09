@@ -1,11 +1,14 @@
-export default function Display({fieldOne, fieldTwo,fieldThree,fieldFour
-}) {
+
+export default function Display({fieldOne, fieldTwo, fieldThree, fieldFour}){
+     const fields = [fieldOne, fieldTwo, fieldThree, fieldFour]
+     console.log(fields)
+     const fieldItems = fields.map(field => 
+          <li key={field.uuid}>{field}</li>
+          )
+    
      return(
-          <div>
-               <h1>{fieldOne}</h1>
-               <h1>{fieldTwo}</h1>
-               <h1>{fieldThree}</h1>
-               <h1>{fieldFour}</h1>
-          </div>
+          <>
+          <ul>{fieldItems}</ul>
+          </>
      )
 }
