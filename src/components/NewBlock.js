@@ -35,6 +35,7 @@ import FieldOne from './FieldOne';
 import FieldTwo from './FieldTwo';
 import FieldThree from './FieldThree';
 import FieldFour from './FieldFour';
+import Display from './Display';
    
 export default function MyForm() {
 
@@ -56,6 +57,7 @@ export default function MyForm() {
   }
 
   return (
+    <div>
     <form method="post" onSubmit={handleSubmit}>
       {/* <label>
         Text <input name="myInput" defaultValue="HIHIHIHIH" />
@@ -63,21 +65,15 @@ export default function MyForm() {
       <FieldOne />
       <hr />
       <FieldTwo />
-      <FieldThree />
+      <FieldThree 
+      />
       <FieldFour />
-      {/* <label>
-        Checkboit: <input type="checkbox" name="myCheckbox" defaultChecked={true} />
-      </label>
-      // <hr /> 
-      // <p>
-      //   Radio buttons:
-      //   <label><input type="radio" name="myRadio" value="option1" defaultChecked={true} /> Option 1</label>
-      //   <label><input type="radio" name="myRadio" value="option2"  /> Option 2</label>
-      //   <label><input type="radio" name="myRadio" value="option3" /> Option 3</label>
-      // </p>
-      // <hr />*/}
+  
+
       <Button type="reset">Reset form</Button>
       <Button type="submit">Submit form</Button>
     </form>
+    {/* <Display /> */}
+    </div>
   );
 }
