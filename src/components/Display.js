@@ -1,14 +1,13 @@
+import { useState } from "react"
 
-export default function Display({fieldOne, fieldTwo, fieldThree, fieldFour}){
-     const fields = [fieldOne, fieldTwo, fieldThree, fieldFour]
-     console.log(fields)
-     const fieldItems = fields.map(field => 
-          <li key={field.uuid}>{field}</li>
-          )
-    
+export default function Display(){
+     const [x, setX] = useState(0)
+     
+
      return(
           <>
-          <ul>{fieldItems}</ul>
+          
+          <h3>{Math.floor(Math.random() * 10) + 1 }</h3>
           </>
      )
 }

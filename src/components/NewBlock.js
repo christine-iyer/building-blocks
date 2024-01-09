@@ -29,7 +29,7 @@
 //        </div>
 //      );
 //    }
-import {useState}from 'react'
+
 import Button from './Button'
 import FieldOne from './FieldOne';
 import FieldTwo from './FieldTwo';
@@ -37,7 +37,7 @@ import FieldThree from './FieldThree';
 import FieldFour from './FieldFour';
 import Display from './Display';
    
-export default function MyForm({fieldOne}) {
+export default function MyForm() {
 
   function handleSubmit(e) {
 
@@ -71,9 +71,8 @@ export default function MyForm({fieldOne}) {
       <Button type="reset">Reset form</Button>
       <Button type="submit">Submit form</Button>
     </form>
-    <div>
-      <Display /> 
-    </div>
+    <Display />
+ 
     </div>
   );
 }
